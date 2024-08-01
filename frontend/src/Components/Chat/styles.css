@@ -1,0 +1,36 @@
+.groupIcon {
+  width: 22px;
+  height: 20px;
+  margin-left: 5px;
+}
+.message-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: calc(
+    100vh - 200px
+  ); /* Adjust based on your header and footer height */
+  scrollbar-width: thin; /* For Firefox */
+}
+
+/* For Chrome, Edge, Safari */
+.message-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.8); /* Darker color */
+  border-radius: 4px;
+}
+
+.message-container::-webkit-scrollbar-track {
+  background: rgba(240, 240, 240, 0.8); /* Lighter background for contrast */
+}
+
+.chat-image {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  width: 200px;
+  z-index: 0;
+}
